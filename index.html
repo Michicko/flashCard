@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Flash Card</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">FlashCards</h1>
+        <button id="display-question" class="btn">Add Question</button>
+        <!-- content | inputs -->
+        <div class="content">
+            <div class="del-container">
+                <p class="del">x</p>
+            </div>
+            <div class="form-group">
+                <label>Question</label>
+                <textarea id="question-input" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Answer</label>
+                <textarea id="answer-input" cols="30" rows="10"></textarea>
+            </div>
+            <div class="btn-div">
+               <button id="save" class="btn">Save</button> 
+               <button id="update" class="btn">Update</button> 
+            </div>
+            <p id="id-box"></p>
+        </div>
+
+        <!-- display cards | output -->
+        <div class="flashcards-container">
+        </div>
+    </div>
+    <footer>
+        &copy; michicko 2020.
+    </footer>
+
+    <!-- ui js -->
+    <script src="js/ui.js"></script>
+    <!-- storage js -->
+    <script src="js/storage.js"></script>
+    <!-- app js -->
+    <script src="js/app.js"></script>
+</body>
+</html>
